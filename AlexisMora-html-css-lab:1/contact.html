@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="author" content="Alexis Mora">
+  <meta name="description" content="The Striped Umbrella - Contact Us">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact Us - The Striped Umbrella</title>
+</head>
+<body>
+  <div class="container">
+    <header>
+      <img src="assets/images/su_banner.gif" alt="Striped Umbrella Banner">
+      <nav id="main-nav">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About Us</a></li>
+          <li><a href="services.html">Our Services</a></li>
+          <li><a href="contact.html">Contact Us</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main class="content">
+      <h2>Contact Us</h2>
+
+      <form action="#" method="post">
+        <fieldset>
+          <legend>Personal Information</legend>
+
+          <label for="firstName">First Name:* </label>
+          <input id="firstName" name="firstName" type="text" required maxlength="25"><br>
+
+          <label for="lastName">Last Name:* </label>
+          <input id="lastName" name="lastName" type="text" required maxlength="25"><br>
+
+          <label for="email">Email:* </label>
+          <input id="email" name="email" type="email" required maxlength="35"><br>
+        </fieldset>
+
+        <fieldset>
+          <legend>Your Message</legend>
+
+          <label for="source">How did you hear about us?</label>
+          <select id="source" name="source">
+            <option value="website" selected>Our website</option>
+            <option value="friends">Friends</option>
+            <option value="tv">TV Adv.</option>
+            <option value="other">Other</option>
+          </select><br>
+
+          <label for="message">Message:</label><br>
+          <textarea id="message" name="message" rows="5" cols="40"></textarea><br>
+
+          <span>Subscribe to our newsletter?</span><br>
+          <label>
+            <input type="radio" name="subscribe" value="yes" checked> Yes
+          </label>
+          <label>
+            <input type="radio" name="subscribe" value="no"> No
+          </label><br><br>
+
+          <button type="submit">Send</button>
+          <button type="reset">Reset</button>
+        </fieldset>
+      </form>
+
+      <h3>Find us</h3>
+      <!-- Google Maps embed: Four Seasons Toronto Spa -->
+      <iframe
+        src="https://www.google.com/maps?q=four+seasons+toronto+spa&output=embed"
+        width="600"
+        height="450"
+        style="border:0;"
+        loading="lazy"
+        allowfullscreen
+        referrerpolicy="no-referrer-when-downgrade">
+      </iframe>
+    </main>
+
+    <footer>
+      Copyright © 2023 ILAC and EFREI Paris – HTML-CSS major lab-work - created by: Alexis Mora - All rights reserved
+    </footer>
+  </div>
+</body>
+</html>
